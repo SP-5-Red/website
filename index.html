@@ -1,13 +1,14 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title> SP-5-Red </title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="mystyles.css">
 <meta name="robots" content="noindex, no follow, noarchive" />
-<meta name="author" content="Sharon Perry" />
+<meta name="author" content="SP-5 Red" />
+<link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='icon.ico') }}"
+    />
 </head>
 <body>
 <div id="wrapper">
@@ -15,29 +16,23 @@
 
   <!-- official KSU colors gold #FFC425 and black #231F20 -->
 
-<p align="center"> <br>
-<img src="ksu-logo2.png" alt="KSU" width="473">
-  <h1>College of Computing and Software Engineering 
-    </h1>
+  <img src="ksu-logo2.png" alt="KSU">
+  <h1>College of Computing and Software Engineering </h1>
   <h1>CS4850 Fall 2023</h1>
-  <h1>SP-5 Red</h1>
-  
+  <h1>SP-5 Red: Dynamic Grocery List</h1> 
 </header>
 <nav>
-
-
 <ul>
   <li>Fall 2023</li><br>
   <li><a target="_blank" rel="noopener noreferrer" href="SP5Red-GroceryApp-ProjectPlan.pdf">Project Plan</a></li><br>
   <li><a target="_blank" rel="noopener noreferrer" href="SP-5-Red-GroceryList-Requirements.pdf">SRS</a></li><br>
+  <li><a target="_blank" rel="noopener noreferrer" href="/">SDD</a></li><br>
   <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/SP-5-Red/LinkList">Source Code</a></li><br>
-  <li><a href="index.html">Final Report</a></li><p>    
+  <li><a target="_blank" rel="noopener noreferrer" href="/">Presentation</a></li><br>
+  <li><a target="_blank" rel="noopener noreferrer" href="/">Final Report</a></li><p>    
   
   <!-- <li><a href = "mailto: abc@example.com">Email me.</a></li><br>  -->
-  <br><p>
-   
 </ul>  
-
 </nav>
 <main>   
 <h2 style = "font-family:Sans-serif">Link List</h2>
@@ -48,48 +43,32 @@
   <li>Barcode scanning, predicting text input, and recipe integration</li>
   <li>Budget tracking and spending alerts</li>
 </ul>
-Take a look at our Team!<p>
-  <div class="clear">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-  <p>
-        
-  <br>
-  <div id = "Aly">
-	<img src = "Aly.jpg" alt="aly" width="110">
-	<h2>Aly Hussein</h2>
-	<li>alyhussein2001@gmail.com</li>
-	<li>706-459-9586</li>
-  <br>
-  <br>
-  <div id = "Mohammed">
-  	<img src = "Mohammed.jpg" alt="mohammed" width="110">
-	<h2>Mohammed Shaaban</h2>
-	<li>mody.hesham@hotmail.com</li>
-	<li>706-459-1505</li>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div id = "Joel">
-	<img src = "Joel.jpg" alt="joel" width="110">
-	<h2>Joel Juarez</h2>
-	<li>joej1224@gmail.com</li>
-	<li>404-219-1016</li>
-  <br>
-  <br>
-  <div id = "Jeff">
-	<img src = "Jeff.jpg" alt="jeff" width="110">
-	<h2>Jeff Williams</h2>
-	<li>jefferywilliams559@gmail.com</li>
-	<li>706-669-4544</li>
-  <br>
-  <br>
+  <div id="author-info">
+    <div class="authors noleft">
+      <h2 id="name">Aly Hussein</h2>
+      <img src = "Aly.jpg" alt="aly" width="110">
+      <p>alyhussein2001@gmail.com</p>
+      <p>706-459-9586</p>
+    </div>
+    <div class = "authors">
+      <h2 id="name">Mohammed Shaaban</h2>
+        <img src = "Mohammed.jpg" alt="mohammed" width="110">
+        <p>mody.hesham@hotmail.com</p>
+        <p>706-459-1505</p>
+    </div>
+    <div class = "authors">
+      <h2 id="name">Joel Juarez</h2>
+      <img src = "Joel.jpg" alt="joel" width="110">
+      <p>joej1224@gmail.com</p>
+      <p>404-219-1016</p>
+    </div>
+    <div class="authors">
+      <h2 id="name">Jeff Williams</h2>
+      <img src = "Jeff.jpg" alt="jeff" width="110">
+      <p>jeffrey.williams559@gmail.com</p>
+      <p>706-669-4544</p>
+    </div>
   </div>
-  <br>
-  <br>
-  </div>
-  
 </main>
   
 <footer>Copyright &copy; 2017-2023 Kennesaw State University<br>
@@ -115,16 +94,21 @@ body { background-color:#FFC425;
 header { background-color: #231F20;
          color: #ffffff;
        font-family: Arial, helvetica;;
+       justify-content: center;
 }
-h1 { line-height: 200%;
+header img {
+  width: 40%;
+  padding-left: 30%;
+}
+h1 { line-height: 0%;
         text-align: center;
     background-repeat: no-repeat;
     background-position: right;
     padding-left: 20px;
-    height: 72px;
+    height: 30px;
     margin-bottom: 0;
-background-color:##231F20;
-color:#ffffff;
+  background-color:#231F20;
+  color:#ffffff;
 }
 nav { font-weight: bold;
      padding: 5px;
@@ -167,10 +151,39 @@ main { padding-left: 20px;
 }
 main img { float: left;
            padding-right: 20px;
-           padding-bottom: 20px;
 }
 main ul { list-style-position: inside; }
 .clear { clear: both; }
 header, nav, main, footer { display: block; }
+#author-info {
+  width: 100%;
+  display: grid;
+  font-size: smaller;
+  text-align: center;
+  justify-content: center;
+  padding-top: 2%;
+  margin-bottom: 1%;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+#name {
+  height: 12%;
+  font-size: medium;
+  padding: 0;
+}
+.authors {
+  width: 100%;
+  border-left: 2px solid black;
+}
+.noleft {
+  border: none;
+}
+.authors p {
+  padding: none;
+}
+.authors img{
+  width: 85%;
+  padding-left: 7.5%;
+  height: auto;
+}
 </style>
 </html>
